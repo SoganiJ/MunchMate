@@ -1,0 +1,36 @@
+/* @import "tailwindcss"; */
+body {
+    font-family: 'Georgia', sans-serif; /* Choose a visually appealing font */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Increase line height for readability */
+  }
+  
+  /* Re-implement some default text in the website */
+  body h1, body h2, body h3, body h4, body h5, body h6, body p {
+      color: black;
+        }
+
+button {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        
+button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Optional: Add shadow on hover */
+        }
+/* const RecipeCard = styled.div`
+        width: 300px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        background-color: ${(props) => props.theme.header}; /* Use header color for background */
+        /* transition: transform 0.2s ease-in-out;` */ 
+        
+      
+/* &:hover {
+          transform: scale(1.03);
+          box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+        }
+      `; */

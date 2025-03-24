@@ -1,0 +1,22 @@
+/* src/components/ImageUpload.css */
+.image-upload {
+    padding: 20px;
+  }
+  
+  .image-upload h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .image-upload input[type='file'] {
+    margin-bottom: 10px;
+  }
+  
+  .uploaded-image {
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  

@@ -1,0 +1,26 @@
+/* src/components/Logout.css */
+.logout-container {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .logout-container h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .logout-container button {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .logout-container button:hover {
+    background-color: #c82333;
+  }

@@ -1,0 +1,92 @@
+/* src/components/Chatbot.css /
+.chatbot {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto; / Center the chatbot /
+    background-color: #202124;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    / position: relative; / / Remove fixed position to allow content flow */
+}
+
+.chat-box {
+  flex-grow: 1;
+  padding: 20px;
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox /
+  scrollbar-color: #444444 #202124; / For Firefox */
+  &::-webkit-scrollbar {
+    width: 6px;
+  }
+  &::-webkit-scrollbar-track {
+    background: #202124;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: #444444;
+    border-radius: 3px;
+  }
+}
+
+.message {
+  padding: 10px 15px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  word-break: break-word;
+  max-width: 70%;
+  clear: both;
+}
+
+.message.user {
+  background-color: #35363A;
+  color: #fff;
+  align-self: flex-start; /* Align user messages to the left */
+}
+
+.message.bot {
+  background-color: #424549;
+  color: #fff;
+  align-self: flex-end; /* Align bot messages to the right */
+}
+
+.input-area {
+  display: flex;
+  padding: 15px;
+  border-top: 1px solid #333;
+  background-color: #333;
+}
+
+/* src/components/Chatbot.css */
+.input-area input {
+  flex-grow: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  margin-right: 10px;
+  background-color: ${(props) => props.theme.inputBackground};  // Added dynamic background
+  color: ${(props) => props.theme.inputTextColor}; // ADD this code
+}
+
+.input-area button {
+  background-color: transparent; /* Keep buttons without background /
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 25px; / Make buttons more rounded /
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 5px; / Add gap between the buttons */
+}
+
+.input-area button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Subtle hover effect */
+}
+
+.premium-message {
+  padding: 15px;
+  text-align: center;
+  color: #FFC107;
+}

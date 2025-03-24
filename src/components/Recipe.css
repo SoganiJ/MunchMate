@@ -1,0 +1,37 @@
+/* src/components/Recipe.css */
+.recipe-detail {
+    padding: 20px;
+  }
+  
+  .recipe-detail h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-detail img {
+    max-width: 500px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-detail p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-detail h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .recipe-detail ul,
+  .recipe-detail ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .recipe-detail li {
+    font-size: 16px;
+    line-height: 1.5;
+  }
