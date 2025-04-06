@@ -158,7 +158,7 @@ function Recipe() {
 
     try {
       for (const instruction of instructionTexts) {
-        const response = await axios.post('http://localhost:4000/api/convert-instruction', {
+       const response = await axios.post('/api/convert-instruction', {
           instruction,
         });
         convertedTexts.push(response.data.convertedInstruction);
