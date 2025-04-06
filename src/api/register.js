@@ -2,12 +2,11 @@
 import { Firestore } from '@google-cloud/firestore';
 import bcrypt from 'bcrypt';
 import cors from 'cors';
+import { GoogleAuth } from 'google-auth-library';
 
 // Initialize Firestore (use environment variables for credentials)
 const db = new Firestore({
     projectId: process.env.FIRESTORE_PROJECT_ID,
-    //credential: applicationDefault(),
-    keyFilename: process.env.FIRESTORE_KEY_PATH,
 });
 
 export default async function handler(req, res) {
