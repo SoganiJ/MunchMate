@@ -138,7 +138,7 @@ function Chatbot() {
     setMessages([...messages, { text: messageToSend, sender: "user" }]);
 
     try {
-      const response = await fetch("http://localhost:4000/api/message", {
+      const response = await fetch("/api/message", {  // Corrected URL
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ message: messageToSend, sessionId }),
