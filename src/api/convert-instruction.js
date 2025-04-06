@@ -2,10 +2,10 @@
 import { GoogleGenerativeAI } from 'google-generative-ai';
 import cors from 'cors';
 
-const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY); 
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY); // Use environment variable
 
 export default async function handler(req, res) {
-   
+    // Enable CORS for all origins
     cors()(req, res, () => {});
 
     if (req.method !== 'POST') {
