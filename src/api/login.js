@@ -5,7 +5,6 @@ import cors from 'cors';
 
 const db = new Firestore({
     projectId: process.env.FIRESTORE_PROJECT_ID,
-    keyFilename: process.env.FIRESTORE_KEY_PATH,
 });
 
 export default async function handler(req, res) {
