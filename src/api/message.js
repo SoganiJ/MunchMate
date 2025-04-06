@@ -3,7 +3,6 @@ import dialogflow from 'dialogflow';
 import cors from 'cors';
 
 const projectId = process.env.DIALOGFLOW_PROJECT_ID;
-const keyFilename = process.env.DIALOGFLOW_KEY_PATH;
 
 const {
     SessionsClient
@@ -11,7 +10,6 @@ const {
 
 const sessionClient = new SessionsClient({
     projectId,
-    keyFilename
 });
 
 export default async function handler(req, res) {
