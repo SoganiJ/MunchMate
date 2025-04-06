@@ -120,7 +120,7 @@ function Login() {
         setErrorMessage(""); // Clear any previous errors
 
         try {
-            const response = await axios.post('http://localhost:4000/api/login', {  // CHANGE PORT TO 4000
+            const response = await axios.post('/api/login', {  // Corrected URL
                 username: username,
                 password: password
             });
@@ -144,7 +144,7 @@ function Login() {
         setErrorMessage(""); // Clear any previous errors
 
         try {
-            const response = await axios.post('http://localhost:4000/api/register', { // CHANGE PORT TO 4000
+            const response = await axios.post('/api/register', { // Corrected URL
                 username: registerUsername,
                 password: registerPassword
             });
